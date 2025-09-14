@@ -32,18 +32,3 @@ SELECT
 FROM sys.master_files
 ORDER BY DatabaseName, FileType;
 GO
-
-Usage
-
-Open SQL Server Management Studio (SSMS).
-
-Connect to your SQL Server instance.
-
-Open a new query window and paste the script.
-
-Run the script to get the current auto growth configuration for all databases.
-
-Example Output
-DatabaseName	FileName	FileType	CurrentSizeMB	Growth	is_percent_growth	GrowthSizeMB	MaxSize	PhysicalName
-MyDatabase	MyDatabase	ROWS	256	64	0	0.5	-1	C:\MSSQL\Data\MyDatabase.mdf
-MyDatabase	MyDatabase_log	LOG	128	10	1	NULL	2048	C:\MSSQL\Data\MyDatabase.ldf
